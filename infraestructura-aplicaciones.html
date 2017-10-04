@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Redmine Gestion de la Demanda - Redmine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<link rel='shortcut icon' href='/favicon.ico?1500254310' />
+<link rel="stylesheet" media="all" href="/stylesheets/jquery/jquery-ui-1.11.0.css?1500254310" />
+<link rel="stylesheet" media="all" href="style.css" />
+<link rel="stylesheet" media="all" href="/stylesheets/responsive.css?1500254310" />
+
+<script src="/javascripts/jquery-1.11.1-ui-1.11.0-ujs-3.1.4.js?1500254310"></script>
+<script src="/javascripts/application.js?1500254310"></script>
+<script src="/javascripts/responsive.js?1500254310"></script>
+<script>
+//<![CDATA[
+$(window).load(function(){ warnLeavingUnsaved('Esta página contiene texto no guardado y si la abandona sus cambios se perderán'); });
+//]]>
+</script>
+
+<script src="js/highcharts.js"></script>
+<script src="js/exporting.js"></script>
+<script src="js/highcharts-more.js"></script>
+
+
+<!-- page specific tags -->
+<link rel="alternate" type="application/atom+xml" title="ATOM" href="http://localhost:3000/projects/redmine-gestion-de-la-demanda/activity.atom" />
+</head>
+<body class="project-redmine-gestion-de-la-demanda controller-projects action-show">
+
+<div id="wrapper">
+
+
+<div id="wrapper2">
+<div id="wrapper3">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a class="login" href="/login">Iniciar sesión</a></li><li><a class="register" href="/account/register">Registrar</a></li></ul>    </div>
+    
+    <ul><li><a class="home" href="dashboard.html">Inicio</a></li><li><a class="projects" href="/projects">Proyectos</a></li><li><a class="help" href="https://www.redmine.org/guide">Ayuda</a></li></ul></div>
+
+<div id="header">
+
+    <a href="#" class="mobile-toggle-button js-flyout-menu-toggle-button"></a>
+
+    <div id="quick-search">
+        <form action="/projects/redmine-gestion-de-la-demanda/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+        <input type="hidden" name="scope" />
+        
+        <label for='q'>
+          <a accesskey="4" href="/projects/redmine-gestion-de-la-demanda/search">Búsqueda</a>:
+        </label>
+        <input type="text" name="q" id="q" size="20" class="small" accesskey="f" />
+</form>        <div id="project-jump" class="drdn"><span class="drdn-trigger">Redmine Gestion de la Demanda</span><div class="drdn-content"><div class="quick-search"><input type="text" name="q" id="projects-quick-search" value="" class="autocomplete" data-automcomplete-url="/projects/autocomplete.js?jump=overview" autocomplete="off" /></div><div class="drdn-items projects selection"></div><div class="drdn-items all-projects selection"><a href="/projects?jump=overview">Todos los proyectos</a></div></div></div>
+    </div>
+
+    <h1><span class="current-project">Redmine Gestion de la Demanda</span></h1>
+
+    <div id="main-menu" class="tabs">
+        <ul>
+            <li><a class="overview  selected" href="/projects/redmine-gestion-de-la-demanda">Indicadores</a>
+            </li>
+            <li><a class="activity" href="infraestructura-admin.html">Administrar indicador</a>
+            </li>
+            <li><a class="activity" href="estrategia-mejora.html">Estrategia de mejora</a>
+            </li>
+        </ul>
+        <div class="tabs-buttons" style="display:none;">
+            <button class="tab-left" onclick="moveTabLeft(this); return false;"></button>
+            <button class="tab-right" onclick="moveTabRight(this); return false;"></button>
+        </div>
+    </div>
+</div>
+
+<div id="main" class="nosidebar">
+ 
+    <div id="content">
+                
+<h2>Infraestructura tecnológica - Logísitica Nacional</h2>
+
+
+<div>
+
+   <div class="img-info-der">
+    META 97,7%<br/>
+    TENDENCIA 99,2%
+    <img src="img/gestion-graf-verde.jpg"/><br/><br/> 
+    <table class="table-info-der" border="1">
+       <tr>
+           <th colspan="2" style="background-color: #00b050; color: #FFF">Apliación - módulos</th>
+       </tr>
+       <tr>
+           <td>Comisiones [30%]</td>
+           <td>Contados [5%]</td>
+       </tr>
+       <tr>
+           <td>Corresponsal bancario [15%]</td>
+           <td>Logistica de cobro [10%]</td>
+       </tr>
+       <tr>
+           <td>Cotizadores [5%]</td>
+           <td>GPS [5%]</td>
+       </tr>
+       <tr>
+           <td>Digitalización [5%]</td>
+           <td>App movil [5%]</td>
+       </tr>
+       <tr>
+           <td>SIG [5%]</td>
+           <td>Control de ingreso [5%]</td>
+       </tr>
+       <tr>
+           <td>Georeferenciación [5%]</td>
+           <td>Universidad corporativa [5%]</td>
+       </tr> 
+    </table>      
+   </div> 
+
+  <h3>2017 - septiembre</h3> 
+     <div id="containerPv2" class="img-grafica-1">
+    </div>
+<br/>
+    
+    <div class="col1 box" style="width: 48% !important">
+        <h2>Análisis</h2>
+        <p>At full width all three columns will be displayed side by side. As the page is resized the third column will collapse under the first and second. At the smallest screen size all three columns will be stacked on top of one another.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+    </div>
+
+    <div class="col2 box">
+      <table border="1">
+       <tr>
+           <th colspan="6">Canal backoffice semanas del mes</th>
+       </tr>
+       <tr style="background-color: #00b050; color: #FFF">
+           <th>Semana 1</th>
+           <th>Semana 2</th>
+           <th>Semana 3</th>
+           <th>Semana 4</th>
+           <th>Semana 5</th>
+           <th>Acumulado mes</th>
+       </tr>
+       <tr>
+           <td>100</td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td>100</td>
+       </tr>
+       </table>
+    </div>
+
+      
+  <!--<div class="spent_time box">
+    <h3 class="icon icon-time">Tiempo dedicado</h3>
+      <p>0.00 hora</p>
+    <p>
+    <a href="/projects/redmine-gestion-de-la-demanda/time_entries">Detalles</a> |
+    <a href="/projects/redmine-gestion-de-la-demanda/time_entries/report">Informe</a>
+    </p>
+  </div>-->
+  
+</div>
+
+
+
+
+
+        
+        <div style="clear:both;"></div>
+    </div>
+</div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Cargando...</span></div>
+<div id="ajax-modal" style="display:none;"></div>
+
+<div id="footer">
+<script src="js/infraestructuraapps.js" type="text/javascript"></script>
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="https://www.redmine.org/">Redmine</a> &copy; 2006-2017 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

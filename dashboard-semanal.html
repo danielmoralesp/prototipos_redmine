@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Redmine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="DmEVoe2k5WB54SMH7YuS4dwmuaYPIaqQrCZA61OOX5IpYkS4UsWe4Yua5V1lJBfjRuoBD32Pwz6GzB8EcveDpg==" />
+
+<link rel="stylesheet" media="all" href="style.css" />
+
+<!-- page specific tags -->
+<link rel="alternate" type="application/atom+xml" title="Redmine: Últimas noticias" href="http://localhost:3000/news.atom" />
+<link rel="alternate" type="application/atom+xml" title="Redmine: Actividad" href="http://localhost:3000/activity.atom" />
+</head>
+<body class="controller-welcome action-index">
+
+<div id="wrapper">
+
+<div id="wrapper2">
+<div id="wrapper3">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a class="login" href="/login">Iniciar sesión</a></li><li><a class="register" href="/account/register">Registrar</a></li></ul>    </div>
+    
+    <ul><li><a class="home" href="/">Inicio</a></li><li><a class="projects" href="/projects">Proyectos</a></li><li><a class="help" href="https://www.redmine.org/guide">Ayuda</a></li></ul></div>
+
+<div id="header">
+
+    <a href="#" class="mobile-toggle-button js-flyout-menu-toggle-button"></a>
+
+    <div id="quick-search">
+        <form action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+        <input type="hidden" name="scope" />
+        
+        <label for='q'>
+          <a accesskey="4" href="/search">Búsqueda</a>:
+        </label>
+        <input type="text" name="q" id="q" size="20" class="small" accesskey="f" />
+</form>        <div id="project-jump" class="drdn"><span class="drdn-trigger">Ir al proyecto...</span><div class="drdn-content"><div class="quick-search"><input type="text" name="q" id="projects-quick-search" value="" class="autocomplete" data-automcomplete-url="/projects/autocomplete.js?jump=welcome" autocomplete="off" /></div><div class="drdn-items projects selection"></div><div class="drdn-items all-projects selection"><a href="/projects?jump=welcome">Todos los proyectos</a></div></div></div>
+    </div>
+
+    <h1>Redmine</h1>
+    
+    <div id="main-menu" class="tabs">
+        <ul>
+            <li><a class="activity" href="dashboard.html">Mensual</a>
+            </li>            
+            <li><a class="activity selected" href="dashboard-semanal.html">Semanal</a>
+            </li>
+            <li><a class="activity" href="admin-indicadores.html">Administrador de indicadores</a>
+            </li>            
+        </ul>
+       
+    </div>
+
+</div>
+
+<div id="main" class="nosidebar">
+    <div id="sidebar">
+        hola mundo
+        
+    </div>
+
+    <div id="content">
+        
+        <h2>INDICADOR SEMANA 36</h2>
+
+        <div class="splitcontentleftprototipo">
+  
+          <div class="select-semana">
+            Seleccione la semana
+            <select class="styled-select">
+              <option>Semana 35</option>
+              <option>Semana 34</option>
+              <option>Semana 33</option>
+           </select> 
+          </div>
+
+          <div class="graf-general">
+            <div class="graf-general-mes-flecha1-1">
+              <img src="img/flecha-1.jpg">
+            </div>
+
+            <div class="graf-general-mes-flecha2-1">
+              <img src="img/flecha-2.jpg">
+            </div>
+
+            <div class="graf-general-mes-flecha3-1">
+              <img src="img/flecha-3.jpg">
+            </div>
+
+            <div class="graf-general-mes-flecha4">
+              <img src="img/flecha-4.jpg">
+            </div>
+
+            <div class="graf-general-mes1">
+              <table class="tabla-general-2">
+                <tr>
+                  <th>Status</th>
+                  <th>Nombre</th>
+                  <th>IC</th>
+                </tr>
+                <tr>
+                  <td class="semaforo-verde"></td>
+                  <td><a href="demanda-avances.html">Avances</a></td>
+                  <td>90%</td>
+                </tr>
+                <tr>
+                  <td class="semaforo-verde"></td>
+                  <td><a href="demanda-proyectos.html">Proyectos</a></td>
+                  <td>90%</td>
+                </tr>
+                <tr>
+                  <td class="semaforo-rojo"><img></td>
+                  <td><a href="demanda-planes.html">Planes</a></td>
+                  <td>90%</td>
+                </tr>
+                <tr>
+                  <td class="semaforo-verde"></td>
+                  <td><a href="demanda-cambios.html">Cambios</a></td>
+                  <td>90%</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="graf-general-mes2">
+              <table class="tabla-general-2">
+                <tr>
+                  <th>Status</th>
+                  <th>Nombre</th>
+                  <th>IC</th>
+                </tr>
+                <tr>
+                  <td class="semaforo-verde"></td>
+                  <td><a href="got-nivel-servicio.html">Nivel de Servicio</a></td>
+                  <td>90%</td>
+                </tr>
+                <tr>
+                  <td class="semaforo-rojo"><img></td>
+                  <td><a href="got-nivel-atencion.html">Nivel de Atencion</a></td>
+                  <td>90%</td>
+                </tr>
+                <tr>
+                  <td class="smily"></td>
+                  <td><a href="got-ans.html">Cumplimiento SLA</a></td>
+                  <td>90%</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="graf-general-mes3">
+              <table class="tabla-general-2" style="border-spacing: 13px !important;">
+                <tr>
+                  <th>Status</th>
+                  <th>Nombre</th>
+                  <th>IC</th>
+                </tr>
+                <tr>
+                  <td class="semaforo-verde"></td>
+                  <td><a href="virtualizacion.html">Fallos/Entrgas Mensual</a></td>
+                  <td>90%</td>
+                </tr>
+                <tr>
+                  <td class="semaforo-rojo"><img></td>
+                  <td>Fallos/Entrgas Anual</td>
+                  <td>90%</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="graf-general-mes4">
+              <table class="tabla-general-2">
+                <tr>
+                  <th>Status</th>
+                  <th>Nombre</th>
+                  <th>IC</th>
+                </tr>
+                <tr>
+                  <td class="smily"></td>
+                  <td> <a href="infraestructura.html">Servicio logística</a></td>
+                  <td>90%</td>
+                </tr>
+                <tr>
+                  <td class="smily"><img></td>
+                  <td>Servicio Canal Retail</td>
+                  <td>90%</td>
+                </tr>
+                <tr>
+                  <td class="smily"></td>
+                  <td>Servicio Canal Corporativo</td>
+                  <td>90%</td>
+                </tr>               
+                <tr>
+                  <td class="smily"></td>
+                  <td>Servicio Aliados y paises</td>
+                  <td>90%</td>
+                </tr>
+                <tr>
+                  <td class="smily"></td>
+                  <td>Servicio Administrativo</td>
+                  <td>90%</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <hr/>
+          <div style="clear:both;"></div>
+          <h2>INDICADOR SEMANAL</h2>
+          
+
+          <div>
+            <img src="img/indicadores_2.png">
+          </div>
+
+          <div style="clear:both;"></div>
+        </div>
+
+        <div class="splitcontentrightprototipo">
+            <div class="news box">
+              <h3>Últimas noticias</h3>
+                <p><a href="/redmine/projects/ing3077">Redmine Instalación cliente servientrega</a>: 
+            <a href="/redmine/news/9">Por qué Twitter renuncia a sus famosos 140 caracteres</a>
+
+            <br>
+            <span class="summary">El progreso consiste en renovarse</span><br>
+            <span class="author">Añadido por <a href="/redmine/users/7" class="user active">Juan Carlos Betancur Piedrahita</a> hace <abbr title="2017-09-27 16:53">10 minutos</abbr></span></p>
+            <p><a href="/redmine/projects/ing3077">Redmine Instalación cliente servientrega</a>: 
+            <a href="/redmine/news/8">Satélite diseñado para mejorar conectividad</a>
+
+            <br>
+            <span class="summary">El Amazonas 5 fue puesto ya está en órbita y será operado por una firma brasilera.</span><br>
+            <span class="author">Añadido por <a href="/redmine/users/7" class="user active">Juan Carlos Betancur Piedrahita</a> hace <abbr title="2017-09-27 16:26">37 minutos</abbr></span></p>
+
+                <a href="/redmine/news">Ver todas las noticias</a>
+              </div>
+        </div>
+        
+    </div>
+</div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Cargando...</span></div>
+<div id="ajax-modal" style="display:none;"></div>
+
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="https://www.redmine.org/">Redmine</a> &copy; 2006-2017 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

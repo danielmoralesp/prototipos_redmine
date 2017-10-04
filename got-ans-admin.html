@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Vistazo - Redmine Gestion de la Demanda - Redmine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<link rel='shortcut icon' href='/favicon.ico?1500254310' />
+<link rel="stylesheet" media="all" href="/stylesheets/jquery/jquery-ui-1.11.0.css?1500254310" />
+<link rel="stylesheet" media="all" href="style.css" />
+<link rel="stylesheet" media="all" href="/stylesheets/responsive.css?1500254310" />
+
+<script src="/javascripts/jquery-1.11.1-ui-1.11.0-ujs-3.1.4.js?1500254310"></script>
+<script src="/javascripts/application.js?1500254310"></script>
+<script src="/javascripts/responsive.js?1500254310"></script>
+<script>
+//<![CDATA[
+$(window).load(function(){ warnLeavingUnsaved('Esta página contiene texto no guardado y si la abandona sus cambios se perderán'); });
+//]]>
+</script>
+
+
+<!-- page specific tags -->
+<link rel="alternate" type="application/atom+xml" title="ATOM" href="http://localhost:3000/projects/redmine-gestion-de-la-demanda/activity.atom" />
+</head>
+<body class="project-redmine-gestion-de-la-demanda controller-projects action-show">
+
+<div id="wrapper">
+
+
+<div id="wrapper2">
+<div id="wrapper3">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a class="login" href="/login">Iniciar sesión</a></li><li><a class="register" href="/account/register">Registrar</a></li></ul>    </div>
+    
+    <ul><li><a class="home" href="/">Inicio</a></li><li><a class="projects" href="/projects">Proyectos</a></li><li><a class="help" href="https://www.redmine.org/guide">Ayuda</a></li></ul></div>
+
+<div id="header">
+
+    <a href="#" class="mobile-toggle-button js-flyout-menu-toggle-button"></a>
+
+    <div id="quick-search">
+        <form action="/projects/redmine-gestion-de-la-demanda/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+        <input type="hidden" name="scope" />
+        
+        <label for='q'>
+          <a accesskey="4" href="/projects/redmine-gestion-de-la-demanda/search">Búsqueda</a>:
+        </label>
+        <input type="text" name="q" id="q" size="20" class="small" accesskey="f" />
+</form>        <div id="project-jump" class="drdn"><span class="drdn-trigger">Redmine Gestion de la Demanda</span><div class="drdn-content"><div class="quick-search"><input type="text" name="q" id="projects-quick-search" value="" class="autocomplete" data-automcomplete-url="/projects/autocomplete.js?jump=overview" autocomplete="off" /></div><div class="drdn-items projects selection"></div><div class="drdn-items all-projects selection"><a href="/projects?jump=overview">Todos los proyectos</a></div></div></div>
+    </div>
+
+    <h1><span class="current-project">Redmine Gestion de la Demanda</span></h1>
+
+    <div id="main-menu" class="tabs">
+        <ul>
+            <li><a class="overview" href="/projects/redmine-gestion-de-la-demanda">Indicadores</a>
+            </li>
+            <li><a class="activity  selected" href="/projects/redmine-gestion-de-la-demanda/activity">Administrar indicador</a>
+            </li>
+            <li><a class="activity" href="/projects/redmine-gestion-de-la-demanda/activity">Estrategia de mejora</a>
+            </li>
+        </ul>
+        <div class="tabs-buttons" style="display:none;">
+            <button class="tab-left" onclick="moveTabLeft(this); return false;"></button>
+            <button class="tab-right" onclick="moveTabRight(this); return false;"></button>
+        </div>
+    </div>
+</div>
+
+<div id="main" class="nosidebar">
+ 
+    <div id="content">
+
+    <div class="contextual">
+        <a class="icon icon-add new-issue" href="got-ans-crear.html">Nuevo indicador</a>
+    </div>
+                
+<h2>Administración cumplimiento SLA</h2>
+
+
+<div>
+
+    <div id="query_form_with_buttons" class="hide-when-print">
+    <div id="query_form_content">
+      <fieldset id="filters" class="collapsible ">
+        <legend onclick="toggleFieldset(this);">Filtros</legend>
+        
+
+    <table id="filters-table">
+    <tbody>
+        <tr class="filter" id="tr_status_id">
+            <td class="operator">Año
+                <select id="operators_status_id" name="op[status_id]">
+                    <option value="o" selected="selected">2015</option>
+                    <option value="=">2016</option>
+                    <option value="!">2017</option>
+                </select> <span class="toggle-multiselect">&nbsp;</span></span>
+            </td>
+            <td class="operator">Semana Inicial
+                <select id="operators_status_id" name="op[status_id]">
+                    <option value="o" selected="selected">Semana 35</option>
+                    <option value="=">Semana 36</option>
+                    <option value="!">Semana 37</option>
+                </select> <span class="toggle-multiselect">&nbsp;</span></span>
+            </td>
+            <td class="operator">Semana Final
+                <select id="operators_status_id" name="op[status_id]">
+                    <option value="o" selected="selected">Semana 35</option>
+                    <option value="=">Semana 36</option>
+                    <option value="!">Semana 37</option>
+                </select> <span class="toggle-multiselect">&nbsp;</span></span>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+
+        </div>
+      </fieldset>
+
+      
+    </div>
+
+    <p class="buttons">
+      <a href="#" onclick="$(&quot;#query_form&quot;).submit(); return false;" class="icon icon-checked">Aceptar</a>
+      <a class="icon icon-cancel" href="got-servicios.html">Volver</a>
+    </p>
+    </div>
+    
+    <div class="tabla-resultado">
+        <table class="list">
+          <thead>
+            <tr>              
+              <th></th>
+              <th colspan="2">Casos</th>              
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>              
+              <th>Año - Semana</th>
+              <th>Cerrados</th>
+              <th>Cumplieron</th>              
+              <th>Indicador</th>
+              <th>Editar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="name">
+                2017 - Semana 35
+              </td>
+              <td>
+                50
+              </td>
+              <td>
+                45
+              </td>                          
+              <td class="name">
+                90%
+              </td>
+              <td>
+                <a class="icon icon-edit" href="/projects/redmine-gestion-de-la-demanda/issues?set_filter=1&amp;tracker_id=2"></a>
+              </td>              
+            </tr>
+            <tr>
+              <td class="name">
+                2017 - Semana 36
+              </td>
+              <td>
+                50
+              </td>
+              <td>
+                45
+              </td>                          
+              <td class="name">
+                90%
+              </td>
+              <td>
+                <a class="icon icon-edit" href="/projects/redmine-gestion-de-la-demanda/issues?set_filter=1&amp;tracker_id=2"></a>
+              </td>
+            </tr>
+            <tr>
+              <td class="name">
+                2017 - Semana 37
+              </td>
+              <td>
+                50
+              </td>
+              <td>
+                45
+              </td>                          
+              <td class="name">
+                90%
+              </td>
+              <td>
+                <a class="icon icon-edit" href="/projects/redmine-gestion-de-la-demanda/issues?set_filter=1&amp;tracker_id=2"></a>
+              </td>
+            </tr>    
+          </tbody>
+        </table>
+    </div>    
+  
+  <!--<div class="spent_time box">
+    <h3 class="icon icon-time">Tiempo dedicado</h3>
+      <p>0.00 hora</p>
+    <p>
+    <a href="/projects/redmine-gestion-de-la-demanda/time_entries">Detalles</a> |
+    <a href="/projects/redmine-gestion-de-la-demanda/time_entries/report">Informe</a>
+    </p>
+  </div>-->
+  
+</div>
+
+
+
+
+
+        
+        <div style="clear:both;"></div>
+    </div>
+</div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Cargando...</span></div>
+<div id="ajax-modal" style="display:none;"></div>
+
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="https://www.redmine.org/">Redmine</a> &copy; 2006-2017 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

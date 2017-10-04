@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Vistazo - Redmine Gestion de la Demanda - Redmine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<link rel='shortcut icon' href='/favicon.ico?1500254310' />
+<link rel="stylesheet" media="all" href="/stylesheets/jquery/jquery-ui-1.11.0.css?1500254310" />
+<link rel="stylesheet" media="all" href="style.css" />
+<link rel="stylesheet" media="all" href="/stylesheets/responsive.css?1500254310" />
+
+<script src="/javascripts/jquery-1.11.1-ui-1.11.0-ujs-3.1.4.js?1500254310"></script>
+<script src="/javascripts/application.js?1500254310"></script>
+<script src="/javascripts/responsive.js?1500254310"></script>
+<script>
+//<![CDATA[
+$(window).load(function(){ warnLeavingUnsaved('Esta página contiene texto no guardado y si la abandona sus cambios se perderán'); });
+//]]>
+</script>
+
+
+<!-- page specific tags -->
+<link rel="alternate" type="application/atom+xml" title="ATOM" href="http://localhost:3000/projects/redmine-gestion-de-la-demanda/activity.atom" />
+</head>
+<body class="project-redmine-gestion-de-la-demanda controller-projects action-show">
+
+<div id="wrapper">
+
+
+<div id="wrapper2">
+<div id="wrapper3">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a class="login" href="/login">Iniciar sesión</a></li><li><a class="register" href="/account/register">Registrar</a></li></ul>    </div>
+    
+    <ul><li><a class="home" href="dashboard.html">Inicio</a></li><li><a class="projects" href="/projects">Proyectos</a></li><li><a class="help" href="https://www.redmine.org/guide">Ayuda</a></li></ul></div>
+
+<div id="header">
+
+    <a href="#" class="mobile-toggle-button js-flyout-menu-toggle-button"></a>
+
+    <div id="quick-search">
+        <form action="/projects/redmine-gestion-de-la-demanda/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+        <input type="hidden" name="scope" />
+        
+        <label for='q'>
+          <a accesskey="4" href="/projects/redmine-gestion-de-la-demanda/search">Búsqueda</a>:
+        </label>
+        <input type="text" name="q" id="q" size="20" class="small" accesskey="f" />
+</form>        <div id="project-jump" class="drdn"><span class="drdn-trigger">Redmine Gestion de la Demanda</span><div class="drdn-content"><div class="quick-search"><input type="text" name="q" id="projects-quick-search" value="" class="autocomplete" data-automcomplete-url="/projects/autocomplete.js?jump=overview" autocomplete="off" /></div><div class="drdn-items projects selection"></div><div class="drdn-items all-projects selection"><a href="/projects?jump=overview">Todos los proyectos</a></div></div></div>
+    </div>
+
+    <h1><span class="current-project">Redmine Gestion de la Demanda</span></h1>
+
+    <div id="main-menu" class="tabs">
+        <ul>
+            <li><a class="overview  selected" href="/projects/redmine-gestion-de-la-demanda">Indicadores</a>
+            </li>
+            <li><a class="activity" href="got-nivel-servicio-admin.html">Administrar indicador</a>
+            </li>
+            <li><a class="activity" href="/projects/redmine-gestion-de-la-demanda/activity">Estrategia de mejora</a>
+            </li>
+        </ul>
+        <div class="tabs-buttons" style="display:none;">
+            <button class="tab-left" onclick="moveTabLeft(this); return false;"></button>
+            <button class="tab-right" onclick="moveTabRight(this); return false;"></button>
+        </div>
+    </div>
+</div>
+
+<div id="main" class="nosidebar">
+ 
+    <div id="content">
+                
+<h2>Demanda Avances</h2>
+
+
+<div>
+
+  
+  <div class="img-grafica1">
+            <table class="tabla-demanda">
+            <thead style="background-color: #c3d69b;">
+                <th>Nombre del proyecto</th>
+                <th>Macroproceso</th>
+                <th>% Avance planeado</th>
+                <th>% Avance Ejecutado</th>
+                <th>Etapa</th>
+                <th>SPI</th>
+                <th>CPI</th>
+                <th>Fecha línea base</th>
+                <th>Fecha de inicio</th>
+                <th>Fecha terminación</th>
+                <th>Fecha estado</th>
+                <th>Semáforo</th>
+            </thead>
+            <tr>
+                <td><a href="demanda-proyectos-detalle.html">Discovery BI+BA</a></td>
+                <td>MEVI</td>
+                <td>83%</td>
+                <td>69%</td>
+                <td>Ejecucion</td>
+                <td>0,83</td>
+                <td>1,00</td>
+                <td>28/09/2016</td>
+                <td>28/09/2016</td>
+                <td>28/12/2017</td>
+                <td>15/09/2017</td>
+                <td style="background-color: red;">14%</td>
+            </tr>
+            <tr>
+                <td>Green invoice evolution</td>
+                <td>MERF</td>
+                <td>93%</td>
+                <td>37%</td>
+                <td>Ejecucion</td>
+                <td>0,33</td>
+                <td>0,47</td>
+                <td>28/09/2016</td>
+                <td>28/09/2016</td>
+                <td>28/12/2017</td>
+                <td>15/09/2017</td>
+                <td style="background-color: red;">55%</td>
+            </tr>
+            <tr>
+                <td>Ya mismo</td>
+                <td>CL</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>Implementación</td>
+                <td>0,00</td>
+                <td>0,00</td>
+                <td>28/09/2016</td>
+                <td>28/09/2016</td>
+                <td>28/12/2017</td>
+                <td>15/09/2017</td>
+                <td style="background-color: green;">55%</td>
+            </tr>
+            <tr>
+                <td>Plataforma de Alto impacto</td>
+                <td>MECE</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>Implementación</td>
+                <td>0,99</td>
+                <td>0,99</td>
+                <td>14/07/2017</td>
+                <td>14/07/2017</td>
+                <td>28/08/2017</td>
+                <td>15/09/2017</td>
+                <td style="background-color: green;">90%</td>
+            </tr>
+            <tr>
+                <td>Portal web en la nube</td>
+                <td>MEVI</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>Implementación</td>
+                <td>1,00</td>
+                <td>1,00</td>
+                <td>08/11/2016</td>
+                <td>14/07/2017</td>
+                <td>28/12/2017</td>
+                <td>15/09/2017</td>
+                <td style="background-color: red;">90%</td>
+            </tr>
+            <tr>
+                <td>Logística inversa</td>
+                <td>MEVI</td>
+                <td>70%</td>
+                <td>47%</td>
+                <td>Ejecución</td>
+                <td>1,00</td>
+                <td>1,00</td>
+                <td>08/11/2016</td>
+                <td>14/07/2017</td>
+                <td>28/12/2017</td>
+                <td>15/09/2017</td>
+                <td style="background-color: red;">90%</td>
+            </tr>
+        </table>
+          <img src="img/demanda-avances.png" width="65%" height="418" />
+    </div>
+
+    <div class="col1 box">
+        <h2>Semana 35</h2>
+        <p>This page demonstrates a 3 column responsive layout, complete with responsive images and jquery slideshow.</p>
+    </div>
+
+    <div class="col2 box">
+        <h2>Semana 36</h2>
+        <p>At full width all three columns will be displayed side by side. As the page is resized the third column will collapse under the first and second. At the smallest screen size all three columns will be stacked on top of one another.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+    </div>
+
+    <div class="col3 box">
+        <h2>Semana 37</h2>
+        <p>Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+    </div>
+  
+  <!--<div class="spent_time box">
+    <h3 class="icon icon-time">Tiempo dedicado</h3>
+      <p>0.00 hora</p>
+    <p>
+    <a href="/projects/redmine-gestion-de-la-demanda/time_entries">Detalles</a> |
+    <a href="/projects/redmine-gestion-de-la-demanda/time_entries/report">Informe</a>
+    </p>
+  </div>-->
+  
+</div>
+
+
+
+
+
+        
+        <div style="clear:both;"></div>
+    </div>
+</div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Cargando...</span></div>
+<div id="ajax-modal" style="display:none;"></div>
+
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="https://www.redmine.org/">Redmine</a> &copy; 2006-2017 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

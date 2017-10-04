@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Vistazo - Redmine Gestion de la Demanda - Redmine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<link rel='shortcut icon' href='/favicon.ico?1500254310' />
+<link rel="stylesheet" media="all" href="/stylesheets/jquery/jquery-ui-1.11.0.css?1500254310" />
+<link rel="stylesheet" media="all" href="style.css" />
+<link rel="stylesheet" media="all" href="/stylesheets/responsive.css?1500254310" />
+</head>
+<body class="project-redmine-gestion-de-la-demanda controller-projects action-show">
+
+<div id="wrapper">
+<div id="wrapper2">
+<div id="wrapper3">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a class="login" href="/login">Iniciar sesión</a></li><li><a class="register" href="/account/register">Registrar</a></li></ul>    </div>
+    
+    <ul><li><a class="home" href="dashboard.html">Inicio</a></li><li><a class="projects" href="/projects">Proyectos</a></li><li><a class="help" href="https://www.redmine.org/guide">Ayuda</a></li></ul></div>
+
+<div id="header">
+
+    <a href="#" class="mobile-toggle-button js-flyout-menu-toggle-button"></a>
+
+    <div id="quick-search">
+        <form action="/projects/redmine-gestion-de-la-demanda/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+        <input type="hidden" name="scope" />
+        
+        <label for='q'>
+          <a accesskey="4" href="/projects/redmine-gestion-de-la-demanda/search">Búsqueda</a>:
+        </label>
+        <input type="text" name="q" id="q" size="20" class="small" accesskey="f" />
+</form>        <div id="project-jump" class="drdn"><span class="drdn-trigger">Redmine Gestion de la Demanda</span><div class="drdn-content"><div class="quick-search"><input type="text" name="q" id="projects-quick-search" value="" class="autocomplete" data-automcomplete-url="/projects/autocomplete.js?jump=overview" autocomplete="off" /></div><div class="drdn-items projects selection"></div><div class="drdn-items all-projects selection"><a href="/projects?jump=overview">Todos los proyectos</a></div></div></div>
+    </div>
+
+    <h1><span class="current-project">Redmine Gestion de la Demanda</span></h1>
+
+    <div id="main-menu" class="tabs">
+        <ul>
+            <li><a class="overview" href="/projects/redmine-gestion-de-la-demanda">Indicadores</a>
+            </li>
+            <li><a class="activity  selected" href="/projects/redmine-gestion-de-la-demanda/activity">Administrar indicador</a>
+            </li>
+            <li><a class="activity" href="/projects/redmine-gestion-de-la-demanda/activity">Estrategia de mejora</a>
+            </li>
+        </ul>
+        <div class="tabs-buttons" style="display:none;">
+            <button class="tab-left" onclick="moveTabLeft(this); return false;"></button>
+            <button class="tab-right" onclick="moveTabRight(this); return false;"></button>
+        </div>
+    </div>
+</div>
+
+<div id="main" class="nosidebar">
+ 
+    <div id="content">
+
+    <div class="contextual">
+        <a class="icon icon-add new-issue" href="/issues/new">Nuevo indicador</a>
+    </div>
+                
+    <h2>Nuevo Indicador Nivel de Servicio</h2>
+
+<div class="box tabular filedroplistner">
+<form action="/mesa/new" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="8L7H5gDqrPJ9K/yKHrxLfJ0WNqnFPv7nopy8HdP/cqzkpG1mNyg47JPBXSN9rXtXFmrN/9vOsbCOb3D/hWrUWg=="> 
+  
+  <p>
+  <label for="aplicacion">Año:</label>
+  <input size="15" type="date" name="aplicacion[aplicacion]" id="aplicacion_aplicacion">
+  </p>
+
+  <p>
+  <label for="aplicacion">Semana:</label>
+  <select>
+    <option>Semana 37</option>
+  </select>
+  </p>
+  
+  <p>
+  <label for="aplicacion">LLamadas ingresadas:</label>
+  <input size="15" type="text" name="aplicacion[aplicacion]" id="aplicacion_aplicacion">
+  </p>
+
+  <p>
+  <label for="aplicacion">LLamadas Contestadas:</label>
+  <input size="15" type="text" name="aplicacion[aplicacion]" id="aplicacion_aplicacion">
+  </p>
+
+  <p>
+  <label for="aplicacion">Archivo de Soporte:</label>
+  <input size="15" type="file" name="aplicacion[aplicacion]" id="aplicacion_aplicacion">
+  </p>
+
+  <p>
+  <label for="aplicacion">Análisis:</label>
+  <textarea cols="12" rows="6"></textarea> 
+  </p>
+  
+   <p>
+     <input type="submit" name="commit" value="Crear">
+     <input type="button" name="back" onclick="location.href='got-nivel-servicio-admin.html'" value="Volver">
+
+   </p>
+</form></div>
+   
+  
+  
+</div>
+
+
+
+
+
+        
+        <div style="clear:both;"></div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="https://www.redmine.org/">Redmine</a> &copy; 2006-2017 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
